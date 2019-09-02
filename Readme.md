@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Stanislav Dunaev](https://up.htmlacademy.ru/htmlcss/26/user/602807).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim)
 
 ---
 
