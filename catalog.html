@@ -5,33 +5,39 @@
       <title>Моноподы для селфи</title>
    </head>
    <body>
-      <header>
-         <nav class="main-navigation">
+      <header class="heaader">
+         <nav class="header__main-navigation">
             <a href="index.html">
-            <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
+               <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
             </a>
             <p class="searchbox">
-               <input type="search" name="q" placeholder="Поиск по сайту">
+               <input type="search" placeholder="Поиск по сайту">
             </p>
             <section class="catalog-navigation">
                <a href="catalog.html">Каталог товаров</a>
                <button type="button">показать меню каталога</button>
             </section>
             <ul class="header__user-navigation">
-               <li><a href="">Доставка</a></li>
-               <li><a href="">Гарантия</a></li>
-               <li><a href="#contact-info">Контакты</a></li>
+               <li>
+                  <a href="#" class="user-navigation-item">Доставка</a>
+               </li>
+               <li>
+                  <a href="#" class="user-navigation-item">Гарантия</a>
+               </li>
+               <li>
+                  <a href="#contact-info" class="user-navigation-item">Контакты</a>
+               </li>
             </ul>
             <ul class="header__main-menu">
                <li>
                   <a href="#" class="profile">Валентин Петухов</a>
-                  <button type="button">Выйти</button>
+                  <button type="button" class="header__main-menu-item">Выйти</button>
                </li>
                <li>
-                  <a href="#">Сравнить</a>
+                  <a href="#" class="header__main-menu-item">Сравнить</a>
                </li>
                <li>
-                  <a href="#">Корзина</a>
+                  <a href="#" class="header__main-menu-item">Корзина</a>
                </li>
             </ul>
          </nav>
@@ -39,8 +45,12 @@
       <main class="containter">
          <h1>Моноподы для селфи</h1>
          <ul class="breadscrums">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог товаров</a></li>
+            <li>
+               <a href="./index.html">Главная</a>
+            </li>
+            <li>
+               <a href="#">Каталог товаров</a>
+            </li>
             <li>Моноподы для селфи</li>
          </ul>
          <section class="filters">
@@ -51,7 +61,7 @@
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
             <ul class="catalog-list">
                <li class="catalog-item">
-                  <a href="catalog-item.html">
+                  <a href="./catalog-item.html">
                      <h3>Любительская селфи-палка</h3>
                   </a>
                   <a href="">
@@ -60,7 +70,7 @@
                   <p class="catalog-item-price">500 руб.</p>
                </li>
                <li class="catalog-item">
-                  <a href="catalog-item.html">
+                  <a href="./catalog-item.html">
                      <h3>Профессиональная селфи-палка</h3>
                   </a>
                   <a href="">
@@ -69,7 +79,7 @@
                   <p class="catalog-item-price">1500 руб.</p>
                </li>
                <li class="catalog-item">
-                  <a href="catalog-item.html">
+                  <a href="./catalog-item.html">
                      <h3>Непотопляемая селфи-палка</h3>
                   </a>
                   <a href="">
@@ -78,7 +88,9 @@
                   <p class="catalog-item-price">2500 руб.</p>
                </li>
                <li class="catalog-item">
-                  <a href="catalog-item.html"><h3>Селфи-палка «Следуй за мной»</h3></a>
+                  <a href="./catalog-item.html">
+                     <h3>Селфи-палка «Следуй за мной»</h3>
+                  </a>
                   <a href="catalog-item.html">
                      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Селфи-палка «Следуй за мной»">
                   </a>
@@ -88,9 +100,15 @@
          </section>
          <section class="pagination">
             <ul class="pagination-list">
-               <li class="pagination-item pagination-item-current"><a href="">1</a></li>
-               <li class="pagination-item"><a href="">2</a></li>
-               <li class="pagination-item"><a href="">3</a></li>
+               <li class="pagination-item pagination-item-current">
+                  <a href="">1</a>
+               </li>
+               <li class="pagination-item">
+                  <a href="">2</a>
+               </li>
+               <li class="pagination-item">
+                  <a href="">3</a>
+               </li>
             </ul>
             <button type="button">Назад</button>
             <button type="button">Вперед</button>
@@ -103,24 +121,24 @@
          </div>
          <ul class="footer__user-navigation">
             <li>
-               <a href="">Доставка</a>
+               <a href="#">Доставка</a>
             </li>
             <li>
-               <a href="">Гарантия</a>
+               <a href="#">Гарантия</a>
             </li>
             <li>
-               <a href="">Контакты</a>
+               <a href="#">Контакты</a>
             </li>
          </ul>
          <ul class="social-buttons">
             <li>
-               <a href="">facebook</a>
+               <a href="#">facebook</a>
             </li>
             <li>
-               <a href="">intsagram</a>
+               <a href="#">intsagram</a>
             </li>
             <li>
-               <a href="">twitter</a>
+               <a href="#">twitter</a>
             </li>
          </ul>
          <ul class="footer__main-menu">
@@ -129,21 +147,32 @@
                <button type="button">Выйти</button>
             </li>
             <li>
-               <a href="">Сравнить</a>
+               <a href="#">Сравнить</a>
             </li>
             <li>
-               <a href="">Корзина</a>
+               <a href="#">Корзина</a>
             </li>
          </ul>
       </footer>
       <section class="popup__catalog-menu">
          <ul class="catalog-menu">
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Квадрокоптеры</a></li>
+            <li>
+               <a href="#">Виртуальная реальность</a></li>
+            <li>
+               <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+               <a href="#">Экшн-камеры</a>
+            </li>
+            <li>
+               <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+               <a href="#">Умные часы</a>
+            </li>
+            <li>
+               <a href="#">Квадрокоптеры</a>
+            </li>
          </ul>
          <button type="button">скрыть меню каталога</button>
       </section>
