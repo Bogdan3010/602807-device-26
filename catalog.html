@@ -55,7 +55,48 @@
          </ul>
          <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--Здесь будет форма фильтрации-->
+            <form method="get" action="#">
+               <fieldset>
+                  <legend>Цвет</legend>
+                  <ul>
+                     <li>
+                        <label for="filter-black">Черный</label>
+                        <input type="checkbox" name="black" id="filter-black" checked>
+                     </li>
+                     <li>
+                        <label for="filter-white">Белый</label>
+                        <input type="checkbox" name="white" id="filter-white">
+                     </li>
+                     <li>
+                        <label for="filter-blue">Синий</label>
+                        <input type="checkbox" name="blue" id="filter-blue">
+                     </li>
+                     <li>
+                        <label for="filter-red">Красный</label>
+                        <input type="checkbox" name="red" id="filter-red" checked>
+                     </li>
+                     <li>
+                        <label for="filter-pink">Розовый</label>
+                        <input type="checkbox" name="pink" id="filter-pink">
+                     </li>
+                  </ul>
+               </fieldset>
+            </form>>
+            <form>
+               <fieldset>
+                  <legend>Bluetooth</legend>
+                  <ul>
+                     <li>
+                        <label for="has-bluetooth">Есть</label>
+                        <input type="radio" name="bluetooth-feature" id="has-bluetooth" checked>
+                     </li>
+                     <li>
+                        <label for="no-bluetooth">Нет</label>
+                        <input type="radio" name="bluetooth-feature" id="no-bluetooth">
+                     </li>
+                  </ul>
+               </fieldset>
+            </form>
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
