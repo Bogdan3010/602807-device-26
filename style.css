@@ -57,12 +57,12 @@ a {
     background-size: 100%, 40px;
 }
 
-.device-logo a:hover,
-.device-logo a:focus {
+.device-logo:hover,
+.device-logo:focus {
     opacity: 0.6;
 }
 
-.deivce-logo a:active {
+.deivce-logo:active {
     opacity: 0.3;
 }
 
