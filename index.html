@@ -33,7 +33,7 @@
             </ul>
             <ul class="header-menu">
                <li class="header-menu__item">
-                  <button type="button">Войти</button>
+                  <a href="#" class="login-link">Войти</a>
                </li>
                <li class="header-menu__item">
                   <a href="#">Сравнить</a>
@@ -46,6 +46,7 @@
       </header>
       <main class="container">
          <h1 class="visually-hidden">Магазин «Девайс»</h1>
+         <div class="index-columns">
          <section class="about-us">
             <h2>О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -66,11 +67,11 @@
             <button type="button" class="yellow-button">Напишите нам</button>
             <img src="./img/map.png" width="560" height="222" alt="Улица Строителей 15">
          </section>
+         </div>
       </main>
       <footer>
-         <div class="contact-info">
+         <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
-            <p>Тел.: +7 (495) 495-95-95</p>
          </div>
          <ul class="user-navigation">
             <li class="user-navigation__item">
@@ -96,7 +97,7 @@
          </ul>
          <ul class="footer-menu">
             <li class="footer-menu__item">
-               <button type="button">Войти</button>
+                  <a href="#" class="login-link">Войти</a>
             </li>
             <li class="footer-menu__item">
                <a href="#">Сравнить</a>
@@ -105,6 +106,9 @@
                <a href="#">Корзина</a>
             </li>
          </ul>
+         <div class="phone">
+            <p>Тел.: +7 (495) 495-95-95</p>
+         </div>
          <section>
             <a href="https://htmlacademy.ru" target="_blank" rel="nofollow noopener" class="footer-copyright">
                <img src="img/logo-html.svg" alt="Логотип htmlacademy">
@@ -138,16 +142,16 @@
          <h2 class="visually-hidden">Напишите нам</h2>
          <form action="#" method="POST" id="write-us">
             <p>
-               <label for="user-name">Ваше имя:</label>
-               <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+               <label for="user-name" class="form-label">Ваше имя:</label>
+               <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия" class="form-content">
             </p>
             <p>
-               <label for="user-email">Ваш e-mail:</label>
-               <input id="user-email" type="text" name="user-email" placeholder="email@example.com">
+               <label for="user-email" class="form-label">Ваш e-mail:</label>
+               <input id="user-email" type="text" name="user-email" placeholder="email@example.com" class="form-content">
             </p>
             <p>
-               <label for="feedback-message">Текст письма:</label>
-               <textarea form="write-us" placeholder="В свободной форме" id="feedback-message"></textarea>
+               <label for="feedback-message" class="form-label">Текст письма:</label>
+               <textarea form="write-us" placeholder="В свободной форме" id="feedback-message" class="form-content"></textarea>
             </p>
          </form>
          <button type="button">Закрыть</button>
