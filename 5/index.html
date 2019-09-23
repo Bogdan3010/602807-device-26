@@ -8,13 +8,13 @@
      <base href="https://htmlacademy-htmlcss.github.io/602807-device-26/5/">
 </head>
    <body>
-      <header>
+      <header class="main-header">
          <nav class="main-navigation">
             <a class="device-logo">
                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
             </a>
-            <p>
-               <input type="search" placeholder="Поиск по сайту" class="main-navigation__searchbox">
+            <p class="main-navigation__searchbox">
+               <input type="search" placeholder="Поиск по сайту">
             </p>
             <section class="catalog-navigation">
                <h2 class="visually-hidden">Каталог товаров</h2>
@@ -22,14 +22,14 @@
                <button type="button">показать меню каталога</button>
             </section>
             <ul class="user-navigation">
-               <li>
-                  <a href="#" class="user-navigation__item">Доставка</a>
+               <li class="user-navigation__item">
+                  <a href="#">Доставка</a>
                </li>
-               <li>
-                  <a href="#" class="user-navigation__item">Гарантия</a>
+               <li class="user-navigation__item">
+                  <a href="#">Гарантия</a>
                </li>
-               <li>
-                  <a href="#" class="user-navigation__item">Контакты</a>
+               <li class="user-navigation__item">
+                  <a href="#">Контакты</a>
                </li>
             </ul>
             <ul class="header-menu">
@@ -46,8 +46,8 @@
          </nav>
       </header>
       <main class="container">
-         <h1 class="visually-hidden">Магазин «Девайс»</h1>
          <div class="index-columns">
+         <h1 class="visually-hidden">Магазин «Девайс»</h1>
          <section class="about-us">
             <h2>О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -59,7 +59,7 @@
                <li class="shipping-list__item">Автотрейдинг</li>
                <li class="shipping-list__item">ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#" class="yellow-button">Подробнее о нас</a>
+            <a href="#" class="button yellow-button">Подробнее о нас</a>
          </section>
          <section class="contact-us">
             <h2>Контакты</h2>
@@ -71,20 +71,21 @@
          </div>
       </main>
       <footer>
+         <div class="footer-container">
          <a class="device-logo">
             <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
          </a>
          <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
          </div>
-         <ul class="user-navigation">
-            <li class="user-navigation__item">
+         <ul class="footer-navigation">
+            <li class="footer-navigation__item">
                <a href="#">Доставка</a>
             </li>
-            <li class="user-navigation__item">
+            <li class="footer-navigation__item">
                <a href="#">Гарантия</a>
             </li>
-            <li class="user-navigation__item">
+            <li class="footer-navigation__item">
                <a href="#">Контакты</a>
             </li>
          </ul>
@@ -118,6 +119,7 @@
                <img src="img/logo-html.svg" alt="Логотип htmlacademy">
             </a>
          </section>
+      </div>
       </footer>
       <section class="popup__catalog-menu">
          <ul class="catalog-menu">
@@ -157,6 +159,7 @@
                <label for="feedback-message" class="form-label">Текст письма:</label>
                <textarea form="write-us" placeholder="В свободной форме" id="feedback-message" class="form-content"></textarea>
             </p>
+            <input type="submit" value="Отправить" class="button yellow-button">
          </form>
          <button type="button">Закрыть</button>
       </section>

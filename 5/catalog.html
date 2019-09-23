@@ -13,8 +13,8 @@
             <a href="index.html" class="device-logo">
                <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
             </a>
-            <p>
-               <input type="search" placeholder="Поиск по сайту" class="main-navigation__searchbox">
+            <p class="main-navigation__searchbox">
+               <input type="search" placeholder="Поиск по сайту">
             </p>
             <section class="catalog-navigation">
                <h2 class="visually-hidden">Каталог товаров</h2>
@@ -33,15 +33,15 @@
                </li>
             </ul>
             <ul class="header-menu">
-               <li>
+               <li class="header-menu__item">
                   <a href="#" class="profile">Валентин Петухов</a>
-                  <button type="button"  class="header-menu__item">Выйти</button>
+                  <a href="#">Выйти</a>
                </li>
-               <li>
-                  <a href="#" class="header-menu__item">Сравнить</a>
+               <li class="header-menu__item">
+                  <a href="#">Сравнить</a>
                </li>
-               <li>
-                  <a href="#" class="header-menu__item">Корзина</a>
+               <li class="header-menu__item">
+                  <a href="#">Корзина</a>
                </li>
             </ul>
          </nav>
@@ -56,10 +56,11 @@
                <a href="#">Каталог товаров</a>
             </li>
             <li class="breadscrums__item">
-               <p>Моноподы для селфи</p>
+               <a>Моноподы для селфи</a>
             </li>
          </ul>
          <section class="filters">
+            <div class="filter-container">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form method="get" action="#">
                <fieldset class="form-field">
@@ -103,6 +104,8 @@
                   </ul>
                </fieldset>
             </form>
+            <button class="yellow-button">Показать</button>
+            </div>
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -146,8 +149,9 @@
             </ul>
          </section>
          <section class="pagination">
+            <button type="button" class="pagination-button">Назад</button>
             <ul class="pagination-list">
-               <li class="pagination-list__item pagination-list__item_current">
+               <li class="pagination-list__item pagination-list__item--current">
                   <a href="">1</a>
                </li>
                <li class="pagination-list__item">
@@ -157,25 +161,25 @@
                   <a href="">3</a>
                </li>
             </ul>
-            <button type="button" class="pagination-button">Назад</button>
             <button type="button" class="pagination-button">Вперед</button>
          </section>
       </main>
       <footer>
+         <div class="footer-container">
          <a class="device-logo">
             <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
          </a>
          <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
          </div>
-         <ul class="user-navigation">
-            <li class="user-navigation__item">
+         <ul class="footer-navigation">
+            <li class="footer-navigation__item">
                <a href="#">Доставка</a>
             </li>
-            <li class="user-navigation__item">
+            <li class="footer-navigation__item">
                <a href="#">Гарантия</a>
             </li>
-            <li class="user-navigation__item">
+            <li class="footer-navigation__item">
                <a href="#">Контакты</a>
             </li>
          </ul>
@@ -193,7 +197,7 @@
          <ul class="footer-menu">
             <li class="footer-menu__item">
                <a href="#" class="profile">Валентин Петухов</a>
-               <button type="button">Выйти</button>
+               <a href="#">Выйти</a>
             </li>
             <li class="footer-menu__item">
                <a href="#">Сравнить</a>
@@ -210,6 +214,7 @@
                <img src="img/logo-html.svg" alt="Логотип htmlacademy">
             </a>
          </section>
+         </div>
       </footer>
       <section class="popup__catalog-menu">
          <ul class="catalog-menu">
