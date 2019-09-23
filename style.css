@@ -351,7 +351,8 @@ footer {
     margin: -1px;
 }
 
-button {
+button,
+.button{
     padding: 0;
     border: none;
     font: inherit;
@@ -360,41 +361,30 @@ button {
 }
 
 .yellow-button{
-    display: inline-block;
+    display: flex;
     position: relative;
-    border: none;
-    color: #000000;s
-    overflow: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-  
-.yellow-button:before,
-.yellow-button:after{
-    content: "";
+    width: 220px;
+    height: 40px;
+    background-color: transparent;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .yellow-button::before{
+    content:"";
     position: absolute;
-    width: 100%;
-    height: 0;
-    left: 0;
-    top: 50%;
-    z-index: -1;
+    height: 8px;
     background-color: #f0c52e;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-  
-.yellow-button:after{
-    top: auto;
-    bottom: 50%;
-}
-  
-.yellow-button:hover:before{
-    height: 50%;
-}
-  
-.yellow-button:hover:after{
-    height: 50%;
-}
-
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transition: 300ms ease-out;
+    }
+    
+    .yellow-button:hover:before {
+    height: 100%;
+    }
