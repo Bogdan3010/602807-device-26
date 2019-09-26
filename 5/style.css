@@ -44,6 +44,14 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 header{
     margin-left: 140px;
     margin-right: 140px;
@@ -382,15 +390,6 @@ footer {
     opacity: 0.3;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
-button,
 .button{
     padding: 0;
     border: none;
@@ -408,7 +407,7 @@ button,
     color: #000000;
     align-items: center;
     justify-content: center;
-    }
+}
     
     .yellow-button::before{
     content:"";
@@ -422,8 +421,8 @@ button,
     right: 0;
     top: 50%;
     transition: 300ms ease-out;
-    }
+}
     
     .yellow-button:hover:before {
     height: 100%;
-    }
+}
