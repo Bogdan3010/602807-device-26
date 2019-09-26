@@ -409,7 +409,7 @@ footer {
     justify-content: center;
 }
     
-    .yellow-button::before{
+.yellow-button::before{
     content:"";
     position: absolute;
     height: 8px;
@@ -423,6 +423,6 @@ footer {
     transition: 300ms ease-out;
 }
     
-    .yellow-button:hover:before {
+.yellow-button:hover:before {
     height: 100%;
 }
