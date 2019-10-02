@@ -29,7 +29,8 @@
 body {
     margin: 0;
     padding: 0;
-  
+    max-width: 1440px;;
+    
     font-family: "Gilroy - Extra Bold", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -58,11 +59,16 @@ header{
     margin-top: 40px;
     margin-bottom: 0px;
 
+    max-width: 1160px;
+
     background-image: linear-gradient(rgba(255, 255, 255, 1) 5%, rgba(240, 197, 46, 0.5) 5%);
     background-size: 100%, 40px;
 }
 
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -83,7 +89,21 @@ header{
     opacity: 0.3;
 }
 
+.flex1 {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .main-navigation__searchbox {
+ 
+
     opacity: 0.3;
     color: #000000;
     font-family: "Open Sans";
@@ -101,6 +121,24 @@ input[type=search] {
 
 .main-navigation__searchbox:hover {
     opacity: 0.6;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.header-menu li:first-child {
+    margin: 0 auto;
+}
+
+.user-navigation {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .user-navigation,
@@ -134,14 +172,16 @@ input[type=search] {
     list-style: none;
 }
 
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+.index-columns {
+    display: flex;
+    margin-bottom: 60px;
 }
 
 .index-columns,
 .footer-container {
-    margin-left: 139px;
+    padding-left: 139px;
+    padding-right: 140px;
 }
 
 .index-columns h2 {
@@ -154,6 +194,27 @@ input[type=search] {
     font-family: "Open Sans Light";
     font-weight: 300;
     line-height: 30px;
+}
+
+.index-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 600px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 560px;
+    margin-left: 40px;
 }
 
 .page-title {
@@ -299,10 +360,31 @@ footer {
     background-color: #464646;
 }
 
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.flex3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex5 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-navigation,
 .footer-menu,
 .footer-socials {
     list-style: none;
+    display: flex;
 }
 
 .footer-navigation a,
