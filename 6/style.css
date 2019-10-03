@@ -93,7 +93,7 @@ header{
     display: flex;
     margin-bottom: 10px;
     justify-content: space-between;
-    width: 1000px;
+  
 }
 
 .flex2 {
@@ -129,7 +129,7 @@ input[type=search] {
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
-    width: 500px;
+    width: 595px;
     padding-right: 60px;
 }
 
@@ -144,8 +144,9 @@ input[type=search] {
 .user-navigation {
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 580px;
     padding-right: 60px;
+    padding-left: 0px;
 }
 
 .user-navigation li {
@@ -323,16 +324,12 @@ input[type=search] {
 
 .catalog-list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 
-.row {
-    display: flex;
-}
-
 .catalog-list__item {
-    flex: 1
+    flex: 1;
+    margin-right: 20px;
 }
 
 .catalog-list a {
@@ -349,8 +346,8 @@ input[type=search] {
 
 .pagination {
     width: 760px;
-
     display: flex;
+    margin: 0 auto;
 }
 
 .pagination-list {
