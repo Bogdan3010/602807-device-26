@@ -93,6 +93,7 @@ header{
     display: flex;
     margin-bottom: 10px;
     justify-content: space-between;
+    width: 1000px;
 }
 
 .flex2 {
@@ -102,8 +103,6 @@ header{
 }
 
 .main-navigation__searchbox {
- 
-
     opacity: 0.3;
     color: #000000;
     font-family: "Open Sans";
@@ -130,15 +129,31 @@ input[type=search] {
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
+    width: 500px;
+    padding-right: 60px;
+}
+
+.header-menu li {
+    margin-left: 65px;
 }
 
 .header-menu li:first-child {
-    margin: 0 auto;
+    margin-right: auto;
 }
 
 .user-navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 500px;
+    padding-right: 60px;
+}
+
+.user-navigation li {
+    margin-left: 38px;
+}
+
+.user-navigation li:last-child {
+    margin-left: auto;
 }
 
 .user-navigation,
